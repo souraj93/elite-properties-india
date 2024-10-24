@@ -1,0 +1,212 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Luxury Living Awaits: Elite Properties' Finest Listings</title>
+  <link rel="icon" href="./images/favicon.png" />
+  <meta name="description"
+    content="Discover a world of premium real estate with Elite Properties. Offering exclusive listings in Kolkata and Dubai, we help you find your dream luxury home with expert guidance." />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="./css/all-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="./css/aos.css" rel="stylesheet" type="text/css">
+  <link href="./css/slick.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet"
+    href="./css/easy-autocomplete.min.css" />
+  <link rel="stylesheet"
+    href="./css/easy-autocomplete.themes.min.css" />
+  <link href="./css/style.css" rel="stylesheet" type="text/css">
+
+  <script type="text/javascript" src="./js/jquery.min.js"></script>
+  <script type="text/javascript" src="./js/jquery-ui.js"></script>
+  <script type="text/javascript"
+    src="./js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="./js/slick.min.js"></script>
+  <script type="text/javascript" src="./js/aos.js"></script>
+  <script type="text/javascript" src="./js/custom.js"></script>
+  <script type="text/javascript"
+    src="./js/perfect-scrollbar.js"></script>
+  <script src="./js/jquery.easy-autocomplete.min.js"></script>
+  <script type="text/javascript" src="./js/website-custom.js"></script>
+</head>
+
+<body>
+  <!-- wrapper -->
+  <div class="wrapper">
+    <!-- menu Sidebar -->
+    <div class="offcanvas offcanvas-end menu_item" id="menu">
+      <div class="offcanvas-header pb-0">
+        <button type="button" class="border-0 bg-transparent text-reset" data-bs-dismiss="offcanvas">
+          <svg enable-background="new 0 0 100 100" id="Layer_1" width="40" height="40" version="1.1"
+            viewBox="0 0 100 100" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink">
+            <polygon fill="#bd9a68"
+              points="77.6,21.1 49.6,49.2 21.5,21.1 19.6,23 47.6,51.1 19.6,79.2 21.5,81.1 49.6,53 77.6,81.1 79.6,79.2   51.5,51.1 79.6,23 ">
+            </polygon>
+          </svg>
+        </button>
+      </div>
+      <div class="offcanvas-body px-0">
+        <ul>
+          <li><a href="./index">Home</a></li>
+          <li><a href="./about-us">About Us</a></li>
+          <!-- <li><a href="https://www.liyaans.com/post-your-requirement">Post Your Requirement</a></li> -->
+          <li><a href="./services">Services</a></li>
+          <!-- <li><a href="https://www.liyaans.com/industry-news">Industry News</a></li> -->
+          <li><a href="javascript:void(0)" onclick="clickContactUsFromMenu()">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- menu Sidebar --> <!-- top logo section -->
+    <div class="top_logo_section bg-secondary py-3 border-bottom sticky-top">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-4 col-sm-5">
+            <div class="logo">
+              <a href="./index" title="Elite Properties"><img
+                  src="./images/logo.png" alt="Elite Properties" title="Elite Properties"
+                  class="img-fluid"></a>
+            </div>
+          </div>
+          <div class="col-8 col-sm-7">
+            <div class="d-flex justify-content-end align-items-center">
+              <a href="LINK_TO_OTHER_URL" class="ph-icon text-info fw-medium me-4 text-decoration-none">
+                LINK_TO_OTHER_TEXT </a>
+              <a href="javascript:;" data-bs-toggle="offcanvas" data-bs-target="#menu">
+                <img src="./images/home/menu-icon.svg" alt="" width="28">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- top logo section -->
+
+    <!-- header banner -->
+    <div class="header_banner position-relative">
+      <div class="header_banner_content position-absolute w-100">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-6 col-lg-7 col-xl-8">
+              <span class="banner_title d-block mb-4" data-aos="fade-down">
+                Turning Dreams <span class="fw-bold d-block text-yellow font-gothic-demi">Into Reality!</span>
+              </span>
+              <div class="header_search ">
+                <div class="d-flex mb-3" style="justify-content: space-between;">
+                  <button type="button" id="buy_filter" class="btn filter_btn mr-3" onclick="filterProducts(event)">
+                    Buy
+                  </button>
+                  <!-- <button type="button" id="rent_filter" class="btn filter_btn ms-3" onclick="filterProducts(event)">
+                    Rent
+                  </button> -->
+                  <button type="button" id="newProjects_filter" class="btn filter_btn ms-3" onclick="filterProducts(event)">
+                    New Projects
+                  </button>
+                </div>
+                <div class="form-group position-relative">
+                  <input type="text" class="form-control ps-3" placeholder="Search by location, project name" autocomplete="off" id="project_search">
+                  <button type="button" id="btn_Search" class="btn search_btn text-white ms-3" onclick="searchProducts()">
+                    Search
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end banner content -->
+
+      <!-- slider -->
+      <div class="HeaderSlider">
+        HOME_BANNER_IMAGE
+      </div>
+      <!-- slider end -->
+    </div>
+    <!-- header banner -->
+
+    <!-- Trending Projects -->
+    <div class="premium_projects newly_lunched_projects bg-secondary position-relative">
+      <div class="container">
+        <div class="text-center mb-4 pb-3" data-aos="fade-down">
+          <span class="d-block head_small_text text-dark mb-2">city highlights</span>
+          <span class="heading_title text-primary">Trending Projects</span>
+        </div>
+
+        <div class="newly_lunched_slider" data-aos="fade-up">
+          PROJECTS_LISTING<!-- end -->
+        </div>
+      </div>
+    </div>
+    <!-- Trending Projects -->
+
+
+  </div>
+  <!-- wrapper -->
+
+  <!-- footer -->
+  <style>
+    .auto_complete_li.active {
+      background: #BD9A68
+    }
+  </style>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <div class="footer_block">
+            <span class="d-block text-primary footer_title mb-3">Contact Us</span>
+            <p class="text-white"><a
+              class="text-white"
+              href="CONTACT_US_MAP"
+              target="_blank">CONTACT_US_ADDRESS</a></p>
+
+            <div>
+              <a href="mailto:CONTACT_US_EMAIL" class="text-white d-flex align-items-center">
+                <img src="./images/home/email-icon.svg" alt="" class="me-2">
+                CONTACT_US_EMAIL </a>
+              <a href="tel:CONTACT_US_PRIMARY_PHONE" class="text-white d-flex align-items-center my-1" onclick="return false;">
+                <img src="./images/home/call-icon.svg" alt="" class="me-2"> CONTACT_US_PRIMARY_PHONE </a>
+            </div>
+            <p class="text-white">
+              Office Hours: 10:00 AM-07:00 PM(IST)
+            </p>
+          </div>
+        </div>
+        <div class="col-4" style="text-align: center;">
+          <div class="footer_block mt-4 mt-sm-0">
+            <span class="d-block text-primary footer_title mb-3">Quick Links</span>
+            <ul class="footer_links">
+              <li><a href="./about-us">About Us</a></li>
+              <li><a href="./services">Services</a></li>
+              <li><a href="./index">Kolkata Properties</a></li>
+              <li><a href="./dubai">Dubai Properties</a></li>
+              <li><a href="./blog/luxury-living-in-kolkata">Luxury Living in Kolkata</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="footer_block mt-4 mt-lg-0">
+            <span class="d-block text-primary footer_title mb-3" style="text-align: right;">Follow Us</span>
+            <div class="d-flex social_icons justify-content-end">
+              <a target="_blank" href="https://www.facebook.com/ElitePropertiesKolkata/"><img src="./images/social/fb.png" alt=""></a>
+              
+              <a target="_blank" href="https://www.linkedin.com/company/elitepropertiesindia/posts/?feedView=all"><img src="./images/social/linkedin.png" alt=""></a>
+              <a target="_blank" href="https://www.instagram.com/eliteproperties_india/"><img src="./images/social/insta.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+      <div class="footer_bottom">
+        <div class="text-primary text-center">Copyright © 2024 Elite Properties. All Rights Reserved.</div>
+      </div>
+    </div>
+  </footer><!-- footer -->
+
+</body>
+
+</html>
