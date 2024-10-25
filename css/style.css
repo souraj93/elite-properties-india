@@ -1070,6 +1070,15 @@ footer{
    font-weight:500;
    text-transform:uppercase;
 }
+.footer-middle {
+   text-align: center;
+}
+.footer-3rd .footer_title {
+   text-align: right;
+}
+.footer-3rd .social_icons {
+   justify-content: end;
+}
 .footer_block a{
    text-decoration:none;
 }
@@ -1570,6 +1579,18 @@ footer .footer_bottom{
 }
 
 @media (max-width:767.98px){
+.footer-middle {
+   text-align: right;
+}
+.footer-3rd .footer_title {
+   text-align: center;
+}
+.word-break-word {
+   word-break: break-word;
+}
+.footer-3rd .social_icons {
+   justify-content: center;
+}
 .HeaderSlider{height:300px;}
 .header_banner_content .enquiry_box{max-width:100%; background:#f5f5f5;}
 .header_banner_content .banner_title{font-size:32px; line-height:38px; text-align:center;}

@@ -6,7 +6,7 @@ const kolHomeConfig = {
     image: "./images/projects/forum-estates/3.jpg",
     title: "Forum Estates",
     developerName: "Forum Group",
-    shortAddress: "Action Area IIB, Reckjoani, Newtown, West Bengal 700135",
+    shortAddress: "Action Area IIB, Reckjoani, Newtown",
     configurations: "4 BHK - 8 BHK Villa",
     price: "4.45 Cr Onwards  - 13.18 Cr",
     buildUpAreaLabel: "Size (Sq-Ft)",
@@ -37,7 +37,7 @@ const kolHomeConfig = {
   CONTACT_US_ADDRESS: "Kolkata Office Address: 11F, 04, Street No. 372 Action Area 1, \n Newtown Chakpachuria, West Bengal 700156",
   CONTACT_US_EMAIL: "support@elitepropertiesindia.in",
   CONTACT_US_PRIMARY_PHONE: "+918583878747",
-  LINK_TO_OTHER_TEXT: "Dubai Properties",
+  LINK_TO_OTHER_TEXT: "Checkout Our Dubai Properties",
   LINK_TO_OTHER_URL: "./dubai"
 };
 
@@ -78,7 +78,7 @@ const dubaiHomeConfig = {
   CONTACT_US_ADDRESS: "Kolkata Office Address: 11F, 04, Street No. 372 Action Area 1, \n Newtown Chakpachuria, West Bengal 700156",
   CONTACT_US_EMAIL: "support@elitepropertiesindia.in",
   CONTACT_US_PRIMARY_PHONE: "+918583878747",
-  LINK_TO_OTHER_TEXT: "Kolkata Properties",
+  LINK_TO_OTHER_TEXT: "Checkout Our Kolkata Properties",
   LINK_TO_OTHER_URL: "./index"
 }
 
@@ -106,7 +106,7 @@ const htmlContentForKey = (key, element) => {
                   <span class="d-block text-dark apart_text">${element.configurations}</span>
                 </div>
                 <div class="row">
-                  <div class="col-9">
+                  <div class="col-12">
                     <div class="config_block mt-2">
                       <span class="d-block fs-14 mb-1">${element.buildUpAreaLabel}</span>
                       <span class="d-block text-dark">${element.buildUpArea}</span>

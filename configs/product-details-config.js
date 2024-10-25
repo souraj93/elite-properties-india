@@ -119,7 +119,7 @@ const detailsPageConfig = [{
   CONTACT_US_ADDRESS: "Kolkata Office Address: 11F, 04, Street No. 372 Action Area 1, \n Newtown Chakpachuria, West Bengal 700156",
   CONTACT_US_EMAIL: "support@elitepropertiesindia.in",
   CONTACT_US_PRIMARY_PHONE: "+918583878747",
-  LINK_TO_OTHER_TEXT: "Dubai Properties",
+  LINK_TO_OTHER_TEXT: "Checkout Our Dubai Properties",
   LINK_TO_OTHER_URL: "../dubai",
   LINK_TO_HOME_URL: "../index",
 
@@ -197,7 +197,7 @@ const detailsPageConfig = [{
   CONTACT_US_ADDRESS: "Kolkata Office Address: 11F, 04, Street No. 372 Action Area 1, \n Newtown Chakpachuria, West Bengal 700156",
   CONTACT_US_EMAIL: "support@elitepropertiesindia.in",
   CONTACT_US_PRIMARY_PHONE: "+918583878747",
-  LINK_TO_OTHER_TEXT: "Dubai Properties",
+  LINK_TO_OTHER_TEXT: "Checkout Our Dubai Properties",
   LINK_TO_OTHER_URL: "../dubai",
   LINK_TO_HOME_URL: "../index"
 
@@ -307,7 +307,7 @@ const detailsPageConfig = [{
   CONTACT_US_ADDRESS: "Kolkata Office Address: 11F, 04, Street No. 372 Action Area 1, \n Newtown Chakpachuria, West Bengal 700156",
   CONTACT_US_EMAIL: "support@elitepropertiesindia.in",
   CONTACT_US_PRIMARY_PHONE: "+918583878747",
-  LINK_TO_OTHER_TEXT: "Kolkata Properties",
+  LINK_TO_OTHER_TEXT: "Checkout Our Kolkata Properties",
   LINK_TO_OTHER_URL: "../index",
   LINK_TO_HOME_URL: "../dubai"
 
@@ -419,7 +419,7 @@ const detailsPageConfig = [{
   CONTACT_US_ADDRESS: "Kolkata Office Address: 11F, 04, Street No. 372 Action Area 1, \n Newtown Chakpachuria, West Bengal 700156",
   CONTACT_US_EMAIL: "support@elitepropertiesindia.in",
   CONTACT_US_PRIMARY_PHONE: "+918583878747",
-  LINK_TO_OTHER_TEXT: "Kolkata Properties",
+  LINK_TO_OTHER_TEXT: "Checkout Our Kolkata Properties",
   LINK_TO_OTHER_URL: "../index",
   LINK_TO_HOME_URL: "../dubai"
 
