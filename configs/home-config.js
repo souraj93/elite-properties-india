@@ -25,6 +25,10 @@ const kolHomeConfig = {
     tagging: "buy_filter newProjects_filter search_vinayak search_amara search_vinayak_amara search_newtown search_kolkata"
   }],
   HOME_BANNER_IMAGE: [{
+    image: "./images/home/banner-ads/diwali-offer.jpg",
+    alt: "Diwali offer",
+    urlToOpen: ""
+  }, {
     image: "./images/projects/forum-estates/3.jpg",
     alt: "Forum Estates",
     urlToOpen: "./project/forum-estates"
@@ -37,7 +41,7 @@ const kolHomeConfig = {
   CONTACT_US_ADDRESS: "Kolkata Office Address: 11F, 04, Street No. 372 Action Area 1, \n Newtown Chakpachuria, West Bengal 700156",
   CONTACT_US_EMAIL: "support@elitepropertiesindia.in",
   CONTACT_US_PRIMARY_PHONE: "+918583878747",
-  LINK_TO_OTHER_TEXT: "Checkout Our Dubai Properties",
+  LINK_TO_OTHER_TEXT: "Dubai Real Estate Opportunities",
   LINK_TO_OTHER_URL: "./dubai"
 };
 
@@ -66,6 +70,10 @@ const dubaiHomeConfig = {
     tagging: "buy_filter newProjects_filter search_damac search_hills search_damac_hills search_dubai"
   }],
   HOME_BANNER_IMAGE: [{
+    image: "./images/home/banner-ads/diwali-offer.jpg",
+    alt: "Diwali offer",
+    urlToOpen: ""
+  }, {
     image: "./images/projects/shobha-hartland/2.jpg",
     alt: "Shobha Hartland",
     urlToOpen: "./project/shobha-hartland"
@@ -78,7 +86,7 @@ const dubaiHomeConfig = {
   CONTACT_US_ADDRESS: "Kolkata Office Address: 11F, 04, Street No. 372 Action Area 1, \n Newtown Chakpachuria, West Bengal 700156",
   CONTACT_US_EMAIL: "support@elitepropertiesindia.in",
   CONTACT_US_PRIMARY_PHONE: "+918583878747",
-  LINK_TO_OTHER_TEXT: "Checkout Our Kolkata Properties",
+  LINK_TO_OTHER_TEXT: "Property Listings in Kolkata",
   LINK_TO_OTHER_URL: "./index"
 }
 
@@ -135,7 +143,7 @@ const htmlContentForKey = (key, element) => {
           </div>`
   } else if (key === "HOME_BANNER_IMAGE") {
     return `<div class="slider_item">
-          <a href="${element.urlToOpen}">
+          <a href=${element.urlToOpen ? `"${element.urlToOpen}"` : `"javascript:void(0)"`}>
             <div class="slider_overlay position-absolute h-100 w-100"></div>
             <img src="${element.image}" alt="${element.alt}"
               class="w-100">

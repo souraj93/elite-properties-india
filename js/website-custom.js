@@ -23,7 +23,7 @@ const clickContactUsFromMenu = () => {
 };
 
 const filterProducts = (event) => {
-  const filterIds = ["buy_filter", "rent_filter", "newProjects_filter"];
+  const filterIds = ["buy_filter", "newProjects_filter"];
   event.target.style.backgroundColor = "#363062";
   event.target.style.color = "#fff";
   let otherFilter;
