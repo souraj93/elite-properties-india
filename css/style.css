@@ -1532,6 +1532,16 @@ footer .footer_bottom{
    border-radius:5px;
    font-size:16px;
 }
+#contactForm .enquiry_box {
+   background: rgba(255, 255, 255, 0.8);
+   max-width: 300px;
+   border-radius: 15px;
+   padding: 25px 20px;
+}
+#formErrorMsg {
+   color: #ff0000;
+   font-size: 12px;
+}
 /*======page 404======*/
 
 /*=====Responsive style=======*/

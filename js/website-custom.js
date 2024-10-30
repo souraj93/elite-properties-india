@@ -11,6 +11,59 @@ var frmName = 'frmAddEdit';
 let filteredProducts = [];
 let searchedProducts = [];
 
+// const verifyPhone = (e) => {
+//   if (isNaN(e.value)) {
+//     e.value = e.value.replace(/[^\d]/g,'');
+//   } 
+// };
+
+// const verifyEmail = (e) => {
+//   const emailRegex = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
+//   const errField = document.getElementById("formErrorMsg");
+//   if (!emailRegex.test(e.value.trim())) {
+//     errField.innerHTML = "Invalid Email";
+//   } else {
+//     errField.innerHTML = "";
+//   }
+// };
+
+const submitForm = () => {
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxdWfaEEN3-kKDmSrdgkOBmW1_ZvtOQiwH3j4KWTZmRftn5ueydvCbSvQN3eY3qcPrz/exec';
+  const form = document.getElementById("contactForm");
+  const formData = new FormData(form);
+  // const elements = form.elements;
+  // let errorMsg = "";
+  // for (let i = 0; i < elements.length; i++) {
+  //   console.log("elements ", elements[i].type, errorMsg)
+  //   if (elements.type !== "button" && !elements[i].value.trim()) {
+  //     errorMsg = `${elements[i].id} is required`;
+  //     break;
+  //   }
+  // }
+  // console.log("errorMsg ",errorMsg)
+
+  // if (!errorMsg) {
+  //   const emailField = document.getElementById("Email");
+  //   verifyEmail({
+  //     value: emailField.value
+  //   });
+  // } else {
+  //   const errField = document.getElementById("formErrorMsg");
+  //   if (errorMsg !== " is required") {
+  //     errField.innerHTML = errorMsg;
+  //   }
+    
+  // }
+
+
+
+  fetch(scriptURL, { method: 'POST', body: formData })
+    .then(response => console.log('Success!'))
+    .catch(error => console.log('Error!', error.message));
+  form.reset();
+    
+}
+
 const clickContactUsFromMenu = () => {
   const offcanvasBackdrop = document.getElementsByClassName("offcanvas-backdrop");
   const offCanvas = document.getElementsByClassName("offcanvas");
@@ -58,14 +111,14 @@ const filterProducts = (event) => {
     filteredProducts = document.getElementsByClassName(event.target.id);
     console.log("filteredProducts ", filteredProducts);
     displayProducts(filteredProducts, event.target.id);
-    // if (filteredProducts && filteredProducts.length) {
-  
-    //   for (let i = 0; i < filteredProducts.length; i++) {
-    //     filteredProducts[i].style.display = "block";
-    //   }
-    // }
+    
   }
 
+  
+};
+
+const submitRequest = () => {
+  
   
 };
 
@@ -335,25 +388,6 @@ $(document).ready(function () {
       window.location.replace(BASE_URL + new_url);
     }
   });
-
-  // $(document).on('click','#btnSearch',function(e){
-  // 	if($("#searchBox").val().search(/\S/)==-1){
-  // 		$("#searchBox").after('<span class="valid-msg">Please enter search keyword.</span>');
-  // 		srch_err++;
-  // 	}else{
-  // 		let search_phrase = convertSpacesToDash($("#searchBox").val());
-  // 		window.location.replace(BASE_URL+'projects/all/'+search_phrase);
-  // 		return true;
-  // 	}
-  // 	if(parseInt(srch_err)>0){
-  // 		setTimeout(function(){
-  // 			$("span.valid-msg").fadeOut(8000,function(){
-  // 				$("span.valid-msg").remove();
-  // 			});
-  // 		},2000);
-  // 		return false;
-  // 	}
-  //   });
 
   $(document).on('click', '#subscribeNewsletter', function () {
     if (!email_regex.test($("#newsletterEmail").val())) {
