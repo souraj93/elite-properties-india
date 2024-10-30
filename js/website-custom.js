@@ -29,16 +29,22 @@ let searchedProducts = [];
 
 const submitForm = () => {
   const scriptURL = 'https://script.google.com/macros/s/AKfycbxdWfaEEN3-kKDmSrdgkOBmW1_ZvtOQiwH3j4KWTZmRftn5ueydvCbSvQN3eY3qcPrz/exec';
-  const form = document.getElementById("contactForm");
+  let form = null;
+  if (window.innerWidth < 768) {
+    form = document.getElementById("contactForm_mobile");
+  } else {
+    form = document.getElementById("contactForm");
+  }
   const formData = new FormData(form);
   // const elements = form.elements;
-  // let errorMsg = "";
+  // console.log("xxxxxx ", elements)
+  // // let errorMsg = "";
   // for (let i = 0; i < elements.length; i++) {
-  //   console.log("elements ", elements[i].type, errorMsg)
-  //   if (elements.type !== "button" && !elements[i].value.trim()) {
-  //     errorMsg = `${elements[i].id} is required`;
-  //     break;
-  //   }
+  //   console.log("elements ", elements[i])
+  //   // if (elements.type !== "button" && !elements[i].value.trim()) {
+  //   //   errorMsg = `${elements[i].id} is required`;
+  //   //   break;
+  //   // }
   // }
   // console.log("errorMsg ",errorMsg)
 
@@ -55,7 +61,7 @@ const submitForm = () => {
     
   // }
 
-
+// console.log("formData ", formData)
 
   fetch(scriptURL, { method: 'POST', body: formData })
     .then(response => console.log('Success!'))

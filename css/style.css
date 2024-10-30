@@ -1532,7 +1532,8 @@ footer .footer_bottom{
    border-radius:5px;
    font-size:16px;
 }
-#contactForm .enquiry_box {
+#contactForm .enquiry_box,
+#contactForm_mobile .enquiry_box {
    background: rgba(255, 255, 255, 0.8);
    max-width: 300px;
    border-radius: 15px;
