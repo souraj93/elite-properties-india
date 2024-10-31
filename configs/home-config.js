@@ -40,7 +40,8 @@ const kolHomeConfig = {
   CONTACT_US_MAP: "https://www.google.com/maps/place/11F,+04,+Street+Number+372,+Action+Area+I,+IIF,+Newtown,+Kolkata,+Chakpachuria,+West+Bengal+700156/@22.5863403,88.4838904,17z/data=!3m1!4b1!4m6!3m5!1s0x3a020ac8535effff:0x2cfad415998af67e!8m2!3d22.5863403!4d88.4864653!16s%2Fg%2F11t_sfp1c8?entry=ttu&g_ep=EgoyMDI0MTAyMC4xIKXMDSoASAFQAw%3D%3D",
   CONTACT_US_ADDRESS: "Kolkata Office Address: 11F, 04, Street No. 372 Action Area 1, \n Newtown Chakpachuria, West Bengal 700156",
   CONTACT_US_EMAIL: "support@elitepropertiesindia.in",
-  CONTACT_US_PRIMARY_PHONE: "+918583878747",
+  CONTACT_US_PRIMARY_PHONE: "+918240266320",
+  CONTACT_US_SECONDARY_PHONE: "+918583878747",
   LINK_TO_OTHER_TEXT: "Dubai Real Estate Opportunities",
   LINK_TO_OTHER_URL: "./dubai"
 };
@@ -85,7 +86,8 @@ const dubaiHomeConfig = {
   CONTACT_US_MAP: "https://www.google.com/maps/place/11F,+04,+Street+Number+372,+Action+Area+I,+IIF,+Newtown,+Kolkata,+Chakpachuria,+West+Bengal+700156/@22.5863403,88.4838904,17z/data=!3m1!4b1!4m6!3m5!1s0x3a020ac8535effff:0x2cfad415998af67e!8m2!3d22.5863403!4d88.4864653!16s%2Fg%2F11t_sfp1c8?entry=ttu&g_ep=EgoyMDI0MTAyMC4xIKXMDSoASAFQAw%3D%3D",
   CONTACT_US_ADDRESS: "Kolkata Office Address: 11F, 04, Street No. 372 Action Area 1, \n Newtown Chakpachuria, West Bengal 700156",
   CONTACT_US_EMAIL: "support@elitepropertiesindia.in",
-  CONTACT_US_PRIMARY_PHONE: "+918583878747",
+  CONTACT_US_PRIMARY_PHONE: "+918240266320",
+  CONTACT_US_SECONDARY_PHONE: "+918583878747",
   LINK_TO_OTHER_TEXT: "Property Listings in Kolkata",
   LINK_TO_OTHER_URL: "./index"
 }
@@ -134,7 +136,7 @@ const htmlContentForKey = (key, element) => {
               </div>
             </a>
             <div class="property_share position-absolute bottom-0 start-0 w-100 d-flex">
-              <a href="tel:+918583878747" title="Call Us: +918583878747" class="phone_share text-white">
+              <a href="tel:+918240266320" title="Call Us: +918240266320" class="phone_share text-white">
                 <img src="./images/home/wifi_calling.svg" width="20"
                   alt="Call Us">
                 Call Us
