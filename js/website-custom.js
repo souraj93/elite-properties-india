@@ -11,63 +11,63 @@ var frmName = 'frmAddEdit';
 let filteredProducts = [];
 let searchedProducts = [];
 
-// const verifyPhone = (e) => {
-//   if (isNaN(e.value)) {
-//     e.value = e.value.replace(/[^\d]/g,'');
-//   } 
-// };
+const verifyPhone = (e) => {
+  if (isNaN(e.value)) {
+    e.value = e.value.replace(/[^\d]/g,'');
+  } 
+};
 
-// const verifyEmail = (e) => {
-//   const emailRegex = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
-//   const errField = document.getElementById("formErrorMsg");
-//   if (!emailRegex.test(e.value.trim())) {
-//     errField.innerHTML = "Invalid Email";
-//   } else {
-//     errField.innerHTML = "";
-//   }
-// };
+const verifyEmail = (e) => {
+  const emailRegex = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
+  if (!emailRegex.test(e.value.trim())) {
+    return "Invalid Email";
+  } 
+  return "";
+};
 
 const submitForm = () => {
   const scriptURL = 'https://script.google.com/macros/s/AKfycbxdWfaEEN3-kKDmSrdgkOBmW1_ZvtOQiwH3j4KWTZmRftn5ueydvCbSvQN3eY3qcPrz/exec';
   let form = null;
+  let errField = null;
+  let emailField = null;
   if (window.innerWidth < 768) {
     form = document.getElementById("contactForm_mobile");
+    errField = document.getElementById("formErrorMsg_mobile");
+    emailField = document.getElementById("Email_mobile");
   } else {
     form = document.getElementById("contactForm");
+    errField = document.getElementById("formErrorMsg");
+    emailField = document.getElementById("Email");
   }
   const formData = new FormData(form);
-  // const elements = form.elements;
-  // console.log("xxxxxx ", elements)
-  // // let errorMsg = "";
-  // for (let i = 0; i < elements.length; i++) {
-  //   console.log("elements ", elements[i])
-  //   // if (elements.type !== "button" && !elements[i].value.trim()) {
-  //   //   errorMsg = `${elements[i].id} is required`;
-  //   //   break;
-  //   // }
-  // }
-  // console.log("errorMsg ",errorMsg)
-
-  // if (!errorMsg) {
-  //   const emailField = document.getElementById("Email");
-  //   verifyEmail({
-  //     value: emailField.value
-  //   });
-  // } else {
-  //   const errField = document.getElementById("formErrorMsg");
-  //   if (errorMsg !== " is required") {
-  //     errField.innerHTML = errorMsg;
-  //   }
-    
-  // }
-
-// console.log("formData ", formData)
-
-  fetch(scriptURL, { method: 'POST', body: formData })
+  const elements = form.elements;
+  let errorMsg = "";
+  let id = "";
+  for (let i = 0; i < elements.length; i++) {
+    if (elements[i].type !== "button" && !elements[i].value.trim()) {
+      id = elements[i].id;
+      if (id && id.includes("_")) {
+        id = id.substring(0, id.indexOf("_"));
+      }
+      errorMsg = `${id} is required`;
+      break;
+    }
+  }
+  if (!errorMsg) {
+    errorMsg = verifyEmail({
+      value: emailField.value
+    });
+  }
+  
+  if (errorMsg) {
+    errField.innerHTML = errorMsg;
+  } else {
+    errField.innerHTML = "";
+    fetch(scriptURL, { method: 'POST', body: formData })
     .then(response => console.log('Success!'))
     .catch(error => console.log('Error!', error.message));
-  form.reset();
-    
+    form.reset();
+  }
 }
 
 const clickContactUsFromMenu = () => {

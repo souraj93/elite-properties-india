@@ -111,19 +111,20 @@
                 <form id="contactForm">
                   <div class="enquiry_box ms-auto">
                     <div class="form-group mb-3">
-                      <input type="text" name="name" id="fullname" class="form-control validate-fields" placeholder="Full Name">
+                      <input type="text" name="name" id="Fullname" class="form-control validate-fields" placeholder="Full Name">
                     </div>
                     <div class="form-group mb-3">
-                      <input type="text" name="email" id="email" class="form-control validate-fields" placeholder="Email">
+                      <input type="text" name="email" id="Email" class="form-control validate-fields" placeholder="Email">
                     </div>
                     <div class="form-group mb-3">
-                      <input type="text" name="phone" id="phone" class="form-control validate-fields" placeholder="Phone">
+                      <input type="text" name="phone" id="Phone" class="form-control validate-fields" placeholder="Phone" oninput="verifyPhone(this)">
                     </div>
                     <div class="form-group mb-3">
-                      <textarea name="message" id="message" class="form-control validate-fields" placeholder="Enter your query"></textarea>
+                      <textarea name="message" id="Message" class="form-control validate-fields" placeholder="Enter your query"></textarea>
                     </div>
-                    <input type="text" hidden name="page" value="Forum Estates" />
+                    <input type="text" hidden name="page" value="Vinayak Amara" />
                     <button type="button" class="btn btn-submit text-uppercase text-white font-gothic-demi w-100 mb-3" onclick="submitForm()">Submit</button>
+                    <div id="formErrorMsg"></div>
                   </div>
                 </form>
             </div>
@@ -140,19 +141,20 @@
           <form id="contactForm_mobile">
             <div class="enquiry_box mx-auto">
               <div class="form-group mb-3">
-                <input type="text" name="name" id="fullname" class="form-control validate-fields" placeholder="Full Name">
+                <input type="text" name="name" id="Fullname" class="form-control validate-fields" placeholder="Full Name">
               </div>
               <div class="form-group mb-3">
-                <input type="text" name="email" id="email" class="form-control validate-fields" placeholder="Email">
+                <input type="text" name="email" id="Email_mobile" class="form-control validate-fields" placeholder="Email">
               </div>
               <div class="form-group mb-3">
-                <input type="text" name="phone" id="phone" class="form-control validate-fields" placeholder="Phone">
+                <input type="text" name="phone" id="Phone" class="form-control validate-fields" placeholder="Phone" oninput="verifyPhone(this)">
               </div>
               <div class="form-group mb-3">
-                <textarea name="message" id="message" class="form-control validate-fields" placeholder="Enter your query"></textarea>
+                <textarea name="message" id="Message" class="form-control validate-fields" placeholder="Enter your query"></textarea>
               </div>
               <input type="text" hidden name="page" value="Vinayak Amara" />
               <button type="button" class="btn btn-submit text-uppercase text-white font-gothic-demi w-100 mb-3" onclick="submitForm()">Submit</button>
+              <div id="formErrorMsg_mobile"></div>
             </div>
           </form>
           

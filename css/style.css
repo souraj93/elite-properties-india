@@ -1539,7 +1539,7 @@ footer .footer_bottom{
    border-radius: 15px;
    padding: 25px 20px;
 }
-#formErrorMsg {
+#formErrorMsg, #formErrorMsg_mobile  {
    color: #ff0000;
    font-size: 12px;
 }
