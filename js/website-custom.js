@@ -67,6 +67,7 @@ const submitForm = () => {
     .then(response => console.log('Success!'))
     .catch(error => console.log('Error!', error.message));
     form.reset();
+    window.location.href = `${window.location.origin}/thank-you`;
   }
 }
 
