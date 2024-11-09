@@ -1543,6 +1543,9 @@ footer .footer_bottom{
    color: #ff0000;
    font-size: 12px;
 }
+.fs-contact {
+   font-size: 20px !important;
+}
 /*======page 404======*/
 
 /*=====Responsive style=======*/

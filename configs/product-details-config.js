@@ -139,7 +139,7 @@ const detailsPageConfig = [{
   HANDOVER_DATE: "September, 2027",
   PROJECT_FLOORS: "",
   SITE_ADDRESS: "Forum Estates, Southern Bypass, Kolkata",
-  PROJECT_DESCRIPTION: "",
+  PROJECT_DESCRIPTION: "Forum Estates redefines luxury living as Kolkata’s premier \"city within a city,\" where urban sophistication meets natural serenity. Imagine a home that grows with your family, seamlessly blending lush green spaces with cutting-edge amenities for a complete, vibrant lifestyle. Experience unparalleled privacy in spacious villas, thrive in state-of-the-art professional spaces, and unwind at the high street’s buzzing cafes, youth centers, and recreational facilities. Nestled in New Town, opposite the picturesque Eco Park, and surrounded by premier schools, hospitals, and shopping, Forum Estates is more than a residence—it’s a community crafted for life, learning, and limitless possibilities.",
   GALLERY_IMAGES: [
     "../images/projects/forum-estates/1.jpg",
     "../images/projects/forum-estates/2.jpg",
